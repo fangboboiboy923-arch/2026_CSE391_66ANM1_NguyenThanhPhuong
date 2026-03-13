@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Form</title>
+
+<style>
+body{
+    margin:0;
+    padding:40px;
+    background:#fdfdfd;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width:850px;
+    margin:auto;
+    border:2px solid #333;
+    padding:25px;
+    background:white;
+}
+
+h2{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.contact-form{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.input-group{
+    width:100%;
+}
+
+.input-half{
+    width:48%;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+textarea{
+    min-height:240px;
+    resize:vertical;
+}
+
+.bottom{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+}
+
+button{
+    background:#5db7ff;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.small-note{
+    color:#666;
+    font-size:14px;
+}
+
+@media(max-width:650px){
+    .input-half{
+        width:100%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Get in touch with us by filling contact form below</h2>
+
+<form class="contact-form">
+
+<div class="input-group input-half">
+<input type="text" placeholder="* Enter your full name" required>
+</div>
+
+<div class="input-group input-half">
+<input type="email" placeholder="* Enter your email address" required>
+</div>
+
+<div class="input-group">
+<input type="text" placeholder="Enter your subject">
+</div>
+
+<div class="input-group">
+<textarea placeholder="* Your message here..." required></textarea>
+</div>
+
+<div class="bottom">
+<button type="submit">Send message</button>
+<div class="small-note">* Please fill all required form field, thanks!</div>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
